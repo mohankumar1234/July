@@ -1,0 +1,25 @@
+package POM;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Wishlist 
+{
+	WebDriver driver;
+	
+	@FindBy(xpath = "//div/h1[contains (text() , 'Register')]")
+	WebElement lblWishlist;
+	
+	public Wishlist(WebDriver driver)
+	{
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	public String getlblWishlist(String driver)
+	{
+		return lblWishlist.getText();
+	}
+}

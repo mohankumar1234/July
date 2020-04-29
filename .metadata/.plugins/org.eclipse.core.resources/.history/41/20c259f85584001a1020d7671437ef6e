@@ -1,0 +1,14 @@
+Feature: Login function validation.
+
+Scenario Outline:  Validate the following labels within the frame Returning Customers.
+Given I Launch "<url>"
+When I Click "Log in" in top menu
+Then Log In page should be displayed and I validate it.
+Then I Validate the label "Email:" , "Password" , "Remember me?" , "Forgot password?" , "Log in"
+Then I Validate text box, visible next to the email label.
+Then I Validate textbox, visible next to the password lable.
+Then I quit browser.
+Examples: 
+|url|
+|http://demowebshop.tricentis.com/|
+

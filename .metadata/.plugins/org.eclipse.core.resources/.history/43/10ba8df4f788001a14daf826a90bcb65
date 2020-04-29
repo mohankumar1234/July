@@ -1,0 +1,150 @@
+package StepDefinitions;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import POM.HomePage;
+import POM.Register;
+import cucumber.api.java.en.*;
+
+public class HomePageValidation 
+{
+WebDriver driver;
+
+
+
+	@Given ("^I Launch \"(.*)\"$")
+	public void launchurl(String url)
+	{
+		System.setProperty("webdriver.chrome.driver" , "D:\\Mohan\\Softwares\\Jar\\chromedriver_win32\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get(url);
+		driver.manage().window().maximize();
+	}
+	
+	@Then ("^I validate the link \"(.*)\" exist$")
+	public void validateLink(String links)
+	{
+		HomePage home1 = new HomePage(driver);
+		switch (links)
+		{
+		case "Register":
+			assertTrue (home1.getEmailStatus(driver));
+			break;
+		case "Log in":
+			assertTrue (home1.getPasswordStatus(driver));
+			break;
+		case "Shopping cart":
+			assertTrue (home1.getEmailStatus(driver));
+			break;
+		case "Wishlist":
+			assertTrue (home1.getPasswordStatus(driver));
+			break;
+		}
+	}
+	
+	@When ("^I Click the link \"(.*)\"$")
+	public void clickLink(String link)
+	{
+		HomePage home1 = new HomePage(driver);
+		switch (link)
+		{
+		case "Log in":
+			home1.clicklnkLogin(driver);
+			break;
+		case "Register":
+			home1.clicklnkRegister(driver);
+			break;
+		case "Shopping cart":
+			
+			break;
+		case "Wishlist":
+			
+			break;
+		}
+		
+	}
+	
+	
+	
+	@Then ("^I Validate the Label \"(.*)\" exist$")
+	public void validateLabelTxt(String label)
+	{
+		HomePage home1 = new HomePage(driver);
+		Register register1 = new Register(driver);
+		switch (label)
+		{
+		case "Email:":
+			assertEquals (home1.getlblEmailText(driver) , label);
+			break;
+		case "Password:":
+			assertEquals (home1.getlblPasswordText(driver) , label);
+			break;
+		case "Remember me?":
+			assertEquals (home1.getlblRememberMeText(driver) , label);
+			break;
+		case "Register":
+			assertEquals (register1.getlblRegister(driver) , label);
+			break;
+		case "Welcome, Please Sign In!":
+			assertEquals ( , label);
+			break;
+		case "Shopping cart":
+			assertEquals ( , label);
+			break;
+		case "Wishlist        ":
+			assertEquals ( , label);
+			break;
+		}		
+	}
+	
+	@Then ("^I Validate the link \"(.*)\" is exist$")
+	public void validatelnkexist(String link)
+	{
+		HomePage home1 = new HomePage(driver);
+		switch (link)
+		{
+		case "Forgot password?":
+			assertTrue (home1.getlnkForgotpasswordStatus(driver));
+		}
+		
+	}
+	
+	@Then ("^I Validate the command button \"(.*)\" is enabled$")
+	public void validateCmdEnable(String name)
+	{
+		HomePage home1 = new HomePage(driver);
+		switch (name)
+		{
+		case "Log in":
+			assertTrue (home1.getcmdLoginStatus(driver));
+		}
+	}
+	
+	@Then ("^I Validate textbox to enter \"(.*)\" is enabled$")
+	public void validateTextbox(String textbox)
+	{
+		HomePage home1 = new HomePage(driver);
+		switch (textbox)
+		{
+		case "Email":
+			assertTrue (home1.getEmailStatus(driver));
+			break;
+		case "Password":
+			assertTrue (home1.getPasswordStatus(driver));
+			break;
+		}
+	}
+	
+	
+
+	@Then ("^I quit browser$")
+	public void quitbrowser()
+	{
+		driver.quit();
+	}
+}

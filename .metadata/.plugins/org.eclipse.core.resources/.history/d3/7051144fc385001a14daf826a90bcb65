@@ -1,0 +1,66 @@
+package POM;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class HomePage 
+{
+	WebDriver driver;
+	@FindBy(xpath = "//li/a[contains (text(), 'Log in')]")
+	WebElement lnkLogin;
+	@FindBy(xpath = "//li/a[contains (text(), 'Register')]")
+	WebElement lnkRegister;
+	@FindBy(xpath = "//div/label[contains (text() , 'Email:' )]")
+	WebElement lblEmail;
+	@FindBy(xpath = "//div/label[contains (text() , 'Email:' )]")
+	WebElement lblEmail;
+	@FindBy(xpath = "//div/label[contains (text() , 'Email:' )]")
+	WebElement lblEmail;
+	@FindBy(xpath = "//div/label[contains (text() , 'Email:' )]")
+	WebElement lblEmail;
+	@FindBy(xpath = "//div/label[contains (text() , 'Email:' )]")
+	WebElement lblEmail;
+	
+	public HomePage(WebDriver driver)
+	{
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void clickLogin(WebDriver driver)
+	{
+		lnkLogin.click();
+	}
+	
+	public void clickRegister(WebDriver driver)
+	{
+		lnkRegister.click();
+	}
+	
+	public String getEmailText(WebDriver driver)
+	{
+		return lblEmail.getText();
+	}
+	
+	public String getEmailLabel(WebDriver driver)
+	{
+		return lblEmail.getText();
+	}
+	
+	public String getEmailLabel(WebDriver driver)
+	{
+		return lblEmail.getText();
+	}
+	
+	public String getEmailLabel(WebDriver driver)
+	{
+		return lblEmail.getText();
+	}
+	
+	public String getEmailLabel(WebDriver driver)
+	{
+		return lblEmail.getText();
+	}
+}

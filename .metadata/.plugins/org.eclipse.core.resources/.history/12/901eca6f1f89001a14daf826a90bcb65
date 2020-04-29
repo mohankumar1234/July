@@ -1,0 +1,86 @@
+Feature: HomePage validation.
+
+@TC1
+Scenario Outline: Top Menu UI Validation
+Given I launch "<url>"
+Then I validate the link "<link>" exist in homepage
+Then I quit browser
+Examples: 
+|url                              |link|
+|http://demowebshop.tricentis.com/|Register|
+|http://demowebshop.tricentis.com/|Log in|
+|http://demowebshop.tricentis.com/|Shopping cart|
+|http://demowebshop.tricentis.com/|Wishlist|
+
+@TC2
+Scenario Outline: Validate the function of following link in top menu -  Register, Login, WishList, ShoppingCart
+Given I launch "<url>"
+When I click the link "<link1>" in homepage
+Then I validate the Label "<label1>" exist in register page
+Then I navigate back the browser
+When I click the link "<link2>" in homepage
+Then I validate the Label "<label2>" exist in login page
+Then I navigate back the browser
+When I click the link "<link3>" in homepage
+Then I validate the Label "<label3>" exist in shopping cart page
+Then I navigate back the browser
+When I click the link "<link4>" in homepage
+Then I validate the Label "<label4>" exist in wishlist page
+Then I quit browser
+Examples:
+|url                              |link			|label|
+|http://demowebshop.tricentis.com/|Register		|Register|
+|http://demowebshop.tricentis.com/|Log in		|Welcome, Please Sign In!|
+|http://demowebshop.tricentis.com/|Shopping cart|Shopping cart|
+|http://demowebshop.tricentis.com/|Wishlist		|Wishlist        |
+
+@TC3
+Scenario Outline:  Validate the WebElements within the frame Returning Customers.
+Given I launch "<url>"
+When I click the link "<link>" in homepage
+Then I validate the Label "<Email:>" exist in login page
+Then I validate the Label "<Password:>" exist in login page
+Then I validate the Label "<Remember me?>" exist in login page
+Then I validate the link "<Forgot password?>" exist in login page
+Then I validate the command button "<Log in>" enabled in login page
+Then I validate textbox "<Email>" enabled in login page
+Then I validate textbox "<Password>" enabled in login page
+Then I quit browser
+Examples: 
+|url                              |option|Email:|Password:|Remember me?|Forgot password?|Log in|Email|Password|
+|http://demowebshop.tricentis.com/|Log in|Email:|Password:|Remember me?|Forgot password?|Log in|Email|Password|
+
+@TC4
+Scenario Outline: Validate login using valid email and valid password
+Given I launch "<url>"
+When I click the link "<link>" in homepage
+Then I validate the Label "<label>" exist in login page
+When I enter "<emailID>" in the "<email>" textbox in homepage
+When I enter "<passwordID>" in the "<password>"textbox in homepage
+And I Click log in 
+Then User should able to login the web page
+Then User "<Email>" should visible at top menu
+Then I Click logout
+Then I quit browser.
+Examples: 
+|url|link|label|emailID|email|passwordID|password|
+|http://demowebshop.tricentis.com/|Log in|Welcome, Please Sign In!|mohan@kumar.com|Email:|cccccc|Password:|
+
+@TC5
+Scenario Outline: Validate login for negative path using "Email" and "Password" and validate the "Error" message
+Given I Launch "<url>"
+When I Click "Log in" in top menu
+Then Log In page should be displayed and I validate it.
+When I Enter  "<Email>" and "<password>"
+And I Click log in 
+Then I Validate the "<error>" displayed
+Then I Click logout
+Then I quit browser.
+Examples: 
+|url|Email|password|error|
+|http://demowebshop.tricentis.com/| qwe@kumar.com|cccccc|Login was unsuccessful. Please correct the errors and try again. No customer account found|
+|http://demowebshop.tricentis.com/|mohan@kumar.com|ddd|Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect|
+|http://demowebshop.tricentis.com/|qwe@kumar.com|ddd|Login was unsuccessful. Please correct the errors and try again.No customer account found|
+|http://demowebshop.tricentis.com/||cccccc|Login was unsuccessful. Please correct the errors and try again. No customer account found|
+|http://demowebshop.tricentis.com/|mohan@kumar.com||Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect|
+|http://demowebshop.tricentis.com/|||Login was unsuccessful. Please correct the errors and try again. No customer account found|

@@ -1,0 +1,23 @@
+package Trail;
+
+import static org.testng.Assert.assertEquals;
+
+import POM.Register;
+
+public class Delete {
+
+	public static void main(String[] args) {
+		WebDriver 
+Register register1 = new Register(driver);
+		
+		switch (label)
+		{
+		
+		case "Register":
+			assertEquals (register1.getlblRegister(driver) , label);
+			break;
+		
+		}	
+	}
+
+}

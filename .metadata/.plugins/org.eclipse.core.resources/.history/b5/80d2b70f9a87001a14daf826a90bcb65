@@ -1,0 +1,16 @@
+package POM;
+
+import org.openqa.selenium.support.FindBy;
+
+public class Register 
+{
+	@FindBy(xpath = "")
+	WebElement ;
+	@FindBy(xpath = "")
+	WebElement ;
+	@FindBy(xpath = "")
+	WebElement ;
+	@FindBy(xpath = "")
+	WebElement ;
+
+}

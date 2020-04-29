@@ -1,0 +1,49 @@
+Feature: Login function validation.
+
+@TC1
+Scenario Outline:  Validate the following labels within the frame Returning Customers.
+Given I Launch "<url>"
+When I Click "<option>" in top menu
+Then I validate the "<pagetitle>" of the webpage
+Then I Validate the label "<Email:>"
+Then I Validate the label "<Password>" , "Remember me?" , "Forgot password?" , "Log in"
+Then I Validate text box, visible next to the email label.
+Then I Validate textbox, visible next to the password lable.
+Then I quit browser.
+Examples: 
+|url                              |option|pagetitle           |
+|http://demowebshop.tricentis.com/|Log in|Demo Web Shop. Login|
+
+@TC2
+Scenario Outline: Validate login using valid email and valid password
+Given I Launch "<url>"
+When I Click "Log in" in top menu
+Then Log In page should be displayed and I validate it.
+When I Enter  "<Email>" and "<password>"
+And I Click log in 
+Then User should able to login the web page
+Then User "<Email>" should visible at top menu
+Then I Click logout
+Then I quit browser.
+Examples: 
+|url|Email|password|
+|http://demowebshop.tricentis.com/|mohan@kumar.com|cccccc|
+
+@TC3
+Scenario Outline: Validate login for negative path using "Email" and "Password" and validate the "Error" message
+Given I Launch "<url>"
+When I Click "Log in" in top menu
+Then Log In page should be displayed and I validate it.
+When I Enter  "<Email>" and "<password>"
+And I Click log in 
+Then I Validate the "<error>" displayed
+Then I Click logout
+Then I quit browser.
+Examples: 
+|url|Email|password|error|
+|http://demowebshop.tricentis.com/| qwe@kumar.com|cccccc|Login was unsuccessful. Please correct the errors and try again. No customer account found|
+|http://demowebshop.tricentis.com/|mohan@kumar.com|ddd|Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect|
+|http://demowebshop.tricentis.com/|qwe@kumar.com|ddd|Login was unsuccessful. Please correct the errors and try again.No customer account found|
+|http://demowebshop.tricentis.com/||cccccc|Login was unsuccessful. Please correct the errors and try again. No customer account found|
+|http://demowebshop.tricentis.com/|mohan@kumar.com||Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect|
+|http://demowebshop.tricentis.com/|||Login was unsuccessful. Please correct the errors and try again. No customer account found|

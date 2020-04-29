@@ -1,0 +1,78 @@
+Feature: HomePage validation.
+
+@TC1
+Scenario Outline: Top Menu UI Validation
+Given I Launch "<url>"
+Then I validate the link "<link>" exist in homepage
+Then I quit browser
+Examples: 
+|url                              |link|
+|http://demowebshop.tricentis.com/|Register|
+|http://demowebshop.tricentis.com/|Log in|
+|http://demowebshop.tricentis.com/|Shopping cart|
+|http://demowebshop.tricentis.com/|Wishlist|
+
+@TC2
+Scenario Outline: Validate the function of following link in top menu -  Register, Login, WishList, ShoppingCart
+Given I Launch "<url>"
+When I Click the link "<link>" in homepage
+Then I Validate the Label "<label>" exist in register page
+Then I Validate the Label "<label>" exist in login page
+Then I Validate the Label "<label>" exist in shopping cart page
+Then I Validate the Label "<label>" exist in wishlist page
+Examples:
+|url                              |link			|label|
+|http://demowebshop.tricentis.com/|Register		|Register|
+|http://demowebshop.tricentis.com/|Log in		|Welcome, Please Sign In!|
+|http://demowebshop.tricentis.com/|Shopping cart|Shopping cart|
+|http://demowebshop.tricentis.com/|Wishlist		|Wishlist        |
+
+@TC3
+Scenario Outline:  Validate the WebElements within the frame Returning Customers.
+Given I Launch "<url>"
+When I Click the link "<link>" in homepage
+Then I Validate the Label "<Email:>" exist in homepage
+Then I Validate the Label "<Password:>" exist in homepage
+Then I Validate the Label "<Remember me?>" exist in homepage
+Then I Validate the link "<Forgot password?>" exist in homepage
+Then I Validate the command button "<Log in>" enabled in homepage
+Then I Validate textbox to enter "<Email>" enabled in homepage
+Then I Validate textbox to enter "<Password>" enabled in homepage
+Then I quit browser
+Examples: 
+|url                              |option|Email:|Password:|Remember me?|Forgot password?|Log in|Email|Password|
+|http://demowebshop.tricentis.com/|Log in|Email:|Password:|Remember me?|Forgot password?|Log in|Email|Password|
+
+@TC4
+Scenario Outline: Validate login using valid email and valid password
+Given I Launch "<url>"
+When I Click "Log in" in top menu
+Then Log In page should be displayed and I validate it.
+When I Enter  "<Email>" and "<password>"
+And I Click log in 
+Then User should able to login the web page
+Then User "<Email>" should visible at top menu
+Then I Click logout
+Then I quit browser.
+Examples: 
+|url|Email|password|
+|http://demowebshop.tricentis.com/|mohan@kumar.com|cccccc|
+
+@TC5
+Scenario Outline: Validate login for negative path using "Email" and "Password" and validate the "Error" message
+Given I Launch "<url>"
+When I Click "Log in" in top menu
+Then Log In page should be displayed and I validate it.
+When I Enter  "<Email>" and "<password>"
+And I Click log in 
+Then I Validate the "<error>" displayed
+Then I Click logout
+Then I quit browser.
+Examples: 
+|url|Email|password|error|
+|http://demowebshop.tricentis.com/| qwe@kumar.com|cccccc|Login was unsuccessful. Please correct the errors and try again. No customer account found|
+|http://demowebshop.tricentis.com/|mohan@kumar.com|ddd|Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect|
+|http://demowebshop.tricentis.com/|qwe@kumar.com|ddd|Login was unsuccessful. Please correct the errors and try again.No customer account found|
+|http://demowebshop.tricentis.com/||cccccc|Login was unsuccessful. Please correct the errors and try again. No customer account found|
+|http://demowebshop.tricentis.com/|mohan@kumar.com||Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect|
+|http://demowebshop.tricentis.com/|||Login was unsuccessful. Please correct the errors and try again. No customer account found|

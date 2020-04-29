@@ -1,0 +1,76 @@
+package POM;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Log_in
+{
+	WebDriver driver;
+	
+	@FindBy(xpath = "//div/h1[contains (text() , 'Welcome, Please Sign In!')]")
+	WebElement lblwelcome;
+	@FindBy(xpath = "//div/label[contains (text() , 'Email:' )]")
+	WebElement lblEmail;
+	@FindBy(xpath = "//div/label[contains (text() , 'Password:')]")
+	WebElement lblPassword;
+	@FindBy(xpath = "//div/label[contains (text() , 'Remember me?')]")
+	WebElement lblRememberMe;
+	@FindBy(xpath = "//span/a[contains(text() , 'Forgot password?')]")
+	WebElement lnkForgotpassword;
+	@FindBy(xpath = "//div/input[@value = 'Log in']")
+	WebElement cmdLogin;
+	@FindBy(xpath = "//div/input[@id = 'Email']")
+	WebElement txtEmail;
+	@FindBy(xpath = "//div/input[@id = 'Password']")
+	WebElement txtPassword;
+	
+	public Log_in(WebDriver driver)
+	{
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	public String getlblwelcome(WebDriver driver2)
+	{
+		return lblwelcome.getText();
+	}
+	
+	public String getlblEmailText(WebDriver driver)
+	{
+		return lblEmail.getText();
+	}
+	
+	public String getlblPasswordText(WebDriver driver)
+	{
+		return lblPassword.getText();
+	}
+	
+	public String getlblRememberMeText(WebDriver driver)
+	{
+		return lblRememberMe.getText();
+	}
+	
+	public boolean getlnkForgotpasswordStatus(WebDriver driver)
+	{
+		return lnkForgotpassword.isDisplayed();
+	}
+	
+	public boolean getcmdLoginStatus(WebDriver driver)
+	{
+		return cmdLogin.isEnabled();
+	}
+	
+	public boolean getEmailStatus(WebDriver driver)
+	{
+		return txtEmail.isEnabled();
+	}
+	
+	public boolean getPasswordStatus(WebDriver driver)
+	{
+		return txtPassword.isEnabled();
+	}
+	
+
+}

@@ -1,0 +1,21 @@
+package StepDefinitions;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.*;
+
+public class TestCase 
+{
+WebDriver driver;
+
+	@Given ("^I Launch \"(.*)\"$")
+	public void launchurl(String url)
+	{
+		System.setProperty("webdriver.chrome.driver" , "D:\\Mohan\\Softwares\\Jar\\chromedriver_win32\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get(url);
+		driver.manage().window().maximize();
+	}
+	
+}
