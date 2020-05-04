@@ -129,7 +129,7 @@ formatter.match({
   "location": "WebShop.launchurl(String)"
 });
 formatter.result({
-  "duration": 10229985900,
+  "duration": 18732954400,
   "status": "passed"
 });
 formatter.match({
@@ -142,14 +142,14 @@ formatter.match({
   "location": "WebShop.validateLinkTop(String)"
 });
 formatter.result({
-  "duration": 122923100,
+  "duration": 502995500,
   "status": "passed"
 });
 formatter.match({
   "location": "WebShop.quitbrowser()"
 });
 formatter.result({
-  "duration": 643117900,
+  "duration": 1359080300,
   "status": "passed"
 });
 formatter.scenario({
@@ -197,7 +197,7 @@ formatter.match({
   "location": "WebShop.launchurl(String)"
 });
 formatter.result({
-  "duration": 9628262900,
+  "duration": 9141539100,
   "status": "passed"
 });
 formatter.match({
@@ -210,14 +210,14 @@ formatter.match({
   "location": "WebShop.validateLinkTop(String)"
 });
 formatter.result({
-  "duration": 44569600,
+  "duration": 46878700,
   "status": "passed"
 });
 formatter.match({
   "location": "WebShop.quitbrowser()"
 });
 formatter.result({
-  "duration": 1163123200,
+  "duration": 1186680300,
   "status": "passed"
 });
 formatter.scenario({
@@ -265,7 +265,7 @@ formatter.match({
   "location": "WebShop.launchurl(String)"
 });
 formatter.result({
-  "duration": 8921693800,
+  "duration": 9754672700,
   "status": "passed"
 });
 formatter.match({
@@ -278,14 +278,14 @@ formatter.match({
   "location": "WebShop.validateLinkTop(String)"
 });
 formatter.result({
-  "duration": 53013300,
+  "duration": 45515300,
   "status": "passed"
 });
 formatter.match({
   "location": "WebShop.quitbrowser()"
 });
 formatter.result({
-  "duration": 1098239400,
+  "duration": 1178350000,
   "status": "passed"
 });
 formatter.scenario({
@@ -333,7 +333,7 @@ formatter.match({
   "location": "WebShop.launchurl(String)"
 });
 formatter.result({
-  "duration": 9882802200,
+  "duration": 11257970000,
   "status": "passed"
 });
 formatter.match({
@@ -346,14 +346,14 @@ formatter.match({
   "location": "WebShop.validateLinkTop(String)"
 });
 formatter.result({
-  "duration": 54475200,
+  "duration": 50061100,
   "status": "passed"
 });
 formatter.match({
   "location": "WebShop.quitbrowser()"
 });
 formatter.result({
-  "duration": 1124354000,
+  "duration": 643444100,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -590,7 +590,7 @@ formatter.match({
   "location": "WebShop.launchurl(String)"
 });
 formatter.result({
-  "duration": 11470696700,
+  "duration": 12347867000,
   "status": "passed"
 });
 formatter.match({
@@ -603,7 +603,7 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "duration": 1971294800,
+  "duration": 784762000,
   "status": "passed"
 });
 formatter.match({
@@ -616,15 +616,15 @@ formatter.match({
   "location": "WebShop.validateLabelRegister(String)"
 });
 formatter.result({
-  "duration": 1121610100,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/h1[contains (text() , \u0027Register\u0027)]\"}\n  (Session info: chrome\u003d81.0.4044.122)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JJIP4FK\u0027, ip: \u002710.0.0.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\\Users\\mogan\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62727}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: ad95350cb569f2e0a2567ffa3b445298\n*** Element info: {Using\u003dxpath, value\u003d//div/h1[contains (text() , \u0027Register\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.getText(Unknown Source)\r\n\tat POM.Register.getlblRegister(Register.java:23)\r\n\tat StepDefinitions.WebShop.validateLabelRegister(WebShop.java:117)\r\n\tat ✽.Then I validate the Label \"Register\" exist in register page(TC1.feature:19)\r\n",
-  "status": "failed"
+  "duration": 30371100,
+  "status": "passed"
 });
 formatter.match({
   "location": "WebShop.navigateback()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 117653900,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -636,7 +636,8 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 567363700,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -648,13 +649,15 @@ formatter.match({
   "location": "WebShop.validateLabelLogin(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 24821900,
+  "status": "passed"
 });
 formatter.match({
   "location": "WebShop.navigateback()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 124464100,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -666,7 +669,8 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 803089600,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -678,13 +682,15 @@ formatter.match({
   "location": "WebShop.validateLabelShoppingCart(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 27131800,
+  "status": "passed"
 });
 formatter.match({
   "location": "WebShop.navigateback()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 106845600,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -696,7 +702,8 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 559871500,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -708,13 +715,15 @@ formatter.match({
   "location": "WebShop.validateLabelWishList(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 110000,
+  "status": "passed"
 });
 formatter.match({
   "location": "WebShop.quitbrowser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 988456100,
+  "status": "passed"
 });
 formatter.scenarioOutline({
   "line": 35,
@@ -920,7 +929,7 @@ formatter.match({
   "location": "WebShop.launchurl(String)"
 });
 formatter.result({
-  "duration": 11085596700,
+  "duration": 9270775700,
   "status": "passed"
 });
 formatter.match({
@@ -933,7 +942,7 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "duration": 627143200,
+  "duration": 601324700,
   "status": "passed"
 });
 formatter.match({
@@ -946,7 +955,7 @@ formatter.match({
   "location": "WebShop.validateLabelLogin(String)"
 });
 formatter.result({
-  "duration": 286923500,
+  "duration": 27083800,
   "status": "passed"
 });
 formatter.match({
@@ -959,7 +968,7 @@ formatter.match({
   "location": "WebShop.validateLabelLogin(String)"
 });
 formatter.result({
-  "duration": 22519300,
+  "duration": 23731700,
   "status": "passed"
 });
 formatter.match({
@@ -972,9 +981,8 @@ formatter.match({
   "location": "WebShop.validateLabelLogin(String)"
 });
 formatter.result({
-  "duration": 13823600,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/label[contains (text() , \u0027Remember me?\u0027)]\"}\n  (Session info: chrome\u003d81.0.4044.122)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JJIP4FK\u0027, ip: \u002710.0.0.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\\Users\\mogan\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 7138db9b488aa6065ceba46907fa6414\n*** Element info: {Using\u003dxpath, value\u003d//div/label[contains (text() , \u0027Remember me?\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.getText(Unknown Source)\r\n\tat POM.Log_in.getlblRememberMeText(Log_in.java:63)\r\n\tat StepDefinitions.WebShop.validateLabelLogin(WebShop.java:102)\r\n\tat ✽.Then I validate the Label \"Remember me?\" exist in login page(TC1.feature:40)\r\n",
-  "status": "failed"
+  "duration": 23246600,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -986,7 +994,8 @@ formatter.match({
   "location": "WebShop.validateLinkLogin(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 38138200,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -998,7 +1007,8 @@ formatter.match({
   "location": "WebShop.validateCmdLogin(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 75693800,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -1010,7 +1020,8 @@ formatter.match({
   "location": "WebShop.validateTextboxLogin(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 25871800,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -1022,13 +1033,15 @@ formatter.match({
   "location": "WebShop.validateTextboxLogin(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 21897900,
+  "status": "passed"
 });
 formatter.match({
   "location": "WebShop.quitbrowser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 706252100,
+  "status": "passed"
 });
 formatter.scenarioOutline({
   "line": 51,
@@ -1203,7 +1216,7 @@ formatter.match({
   "location": "WebShop.launchurl(String)"
 });
 formatter.result({
-  "duration": 11511598200,
+  "duration": 10486178600,
   "status": "passed"
 });
 formatter.match({
@@ -1216,7 +1229,7 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "duration": 740396900,
+  "duration": 576346400,
   "status": "passed"
 });
 formatter.match({
@@ -1229,7 +1242,7 @@ formatter.match({
   "location": "WebShop.validateLabelLogin(String)"
 });
 formatter.result({
-  "duration": 1008100,
+  "duration": 542200,
   "status": "passed"
 });
 formatter.match({
@@ -1246,7 +1259,7 @@ formatter.match({
   "location": "WebShop.enterUsernameLogin(String,String)"
 });
 formatter.result({
-  "duration": 691000,
+  "duration": 169500,
   "status": "passed"
 });
 formatter.match({
@@ -1263,7 +1276,7 @@ formatter.match({
   "location": "WebShop.enterUsernameLogin(String,String)"
 });
 formatter.result({
-  "duration": 528303600,
+  "duration": 145751400,
   "status": "passed"
 });
 formatter.match({
@@ -1276,7 +1289,7 @@ formatter.match({
   "location": "WebShop.clickButtonLogin(String)"
 });
 formatter.result({
-  "duration": 436400,
+  "duration": 261400,
   "status": "passed"
 });
 formatter.match({
@@ -1289,7 +1302,7 @@ formatter.match({
   "location": "WebShop.validateLinkTop(String)"
 });
 formatter.result({
-  "duration": 591700,
+  "duration": 360000,
   "status": "passed"
 });
 formatter.match({
@@ -1302,14 +1315,14 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "duration": 521400,
+  "duration": 327100,
   "status": "passed"
 });
 formatter.match({
   "location": "WebShop.quitbrowser()"
 });
 formatter.result({
-  "duration": 734930400,
+  "duration": 657013000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1528,7 +1541,7 @@ formatter.match({
   "location": "WebShop.launchurl(String)"
 });
 formatter.result({
-  "duration": 10288142800,
+  "duration": 10632588200,
   "status": "passed"
 });
 formatter.match({
@@ -1541,7 +1554,7 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "duration": 1433500,
+  "duration": 417900,
   "status": "passed"
 });
 formatter.match({
@@ -1554,7 +1567,7 @@ formatter.match({
   "location": "WebShop.validateLabelLogin(String)"
 });
 formatter.result({
-  "duration": 292100,
+  "duration": 373500,
   "status": "passed"
 });
 formatter.match({
@@ -1571,7 +1584,7 @@ formatter.match({
   "location": "WebShop.enterUsernameLogin(String,String)"
 });
 formatter.result({
-  "duration": 1694700,
+  "duration": 238400,
   "status": "passed"
 });
 formatter.match({
@@ -1588,7 +1601,7 @@ formatter.match({
   "location": "WebShop.enterUsernameLogin(String,String)"
 });
 formatter.result({
-  "duration": 290900,
+  "duration": 240600,
   "status": "passed"
 });
 formatter.match({
@@ -1601,7 +1614,7 @@ formatter.match({
   "location": "WebShop.clickButtonLogin(String)"
 });
 formatter.result({
-  "duration": 815800,
+  "duration": 154800,
   "status": "passed"
 });
 formatter.match({
@@ -1614,7 +1627,7 @@ formatter.match({
   "location": "WebShop.validateErrorLogin(String)"
 });
 formatter.result({
-  "duration": 636200,
+  "duration": 181800,
   "status": "passed"
 });
 formatter.match({
@@ -1627,14 +1640,14 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "duration": 1255000,
+  "duration": 274000,
   "status": "passed"
 });
 formatter.match({
   "location": "WebShop.quitbrowser()"
 });
 formatter.result({
-  "duration": 1625660300,
+  "duration": 1050770000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1715,7 +1728,7 @@ formatter.match({
   "location": "WebShop.launchurl(String)"
 });
 formatter.result({
-  "duration": 10496901100,
+  "duration": 10407428600,
   "status": "passed"
 });
 formatter.match({
@@ -1728,7 +1741,7 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "duration": 539500,
+  "duration": 236800,
   "status": "passed"
 });
 formatter.match({
@@ -1741,7 +1754,7 @@ formatter.match({
   "location": "WebShop.validateLabelLogin(String)"
 });
 formatter.result({
-  "duration": 241100,
+  "duration": 139200,
   "status": "passed"
 });
 formatter.match({
@@ -1758,7 +1771,7 @@ formatter.match({
   "location": "WebShop.enterUsernameLogin(String,String)"
 });
 formatter.result({
-  "duration": 1025000,
+  "duration": 137800,
   "status": "passed"
 });
 formatter.match({
@@ -1775,7 +1788,7 @@ formatter.match({
   "location": "WebShop.enterUsernameLogin(String,String)"
 });
 formatter.result({
-  "duration": 690900,
+  "duration": 128400,
   "status": "passed"
 });
 formatter.match({
@@ -1788,7 +1801,7 @@ formatter.match({
   "location": "WebShop.clickButtonLogin(String)"
 });
 formatter.result({
-  "duration": 191000,
+  "duration": 121400,
   "status": "passed"
 });
 formatter.match({
@@ -1801,7 +1814,7 @@ formatter.match({
   "location": "WebShop.validateErrorLogin(String)"
 });
 formatter.result({
-  "duration": 257400,
+  "duration": 602000,
   "status": "passed"
 });
 formatter.match({
@@ -1814,14 +1827,14 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "duration": 192400,
+  "duration": 177000,
   "status": "passed"
 });
 formatter.match({
   "location": "WebShop.quitbrowser()"
 });
 formatter.result({
-  "duration": 663476500,
+  "duration": 632946800,
   "status": "passed"
 });
 formatter.scenario({
@@ -1902,7 +1915,7 @@ formatter.match({
   "location": "WebShop.launchurl(String)"
 });
 formatter.result({
-  "duration": 9730391100,
+  "duration": 10333184800,
   "status": "passed"
 });
 formatter.match({
@@ -1915,7 +1928,7 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "duration": 412700,
+  "duration": 331100,
   "status": "passed"
 });
 formatter.match({
@@ -1928,7 +1941,7 @@ formatter.match({
   "location": "WebShop.validateLabelLogin(String)"
 });
 formatter.result({
-  "duration": 201100,
+  "duration": 96200,
   "status": "passed"
 });
 formatter.match({
@@ -1945,7 +1958,7 @@ formatter.match({
   "location": "WebShop.enterUsernameLogin(String,String)"
 });
 formatter.result({
-  "duration": 233100,
+  "duration": 143400,
   "status": "passed"
 });
 formatter.match({
@@ -1962,7 +1975,7 @@ formatter.match({
   "location": "WebShop.enterUsernameLogin(String,String)"
 });
 formatter.result({
-  "duration": 265500,
+  "duration": 211000,
   "status": "passed"
 });
 formatter.match({
@@ -1975,7 +1988,7 @@ formatter.match({
   "location": "WebShop.clickButtonLogin(String)"
 });
 formatter.result({
-  "duration": 141300,
+  "duration": 412900,
   "status": "passed"
 });
 formatter.match({
@@ -1988,7 +2001,7 @@ formatter.match({
   "location": "WebShop.validateErrorLogin(String)"
 });
 formatter.result({
-  "duration": 157300,
+  "duration": 203600,
   "status": "passed"
 });
 formatter.match({
@@ -2001,14 +2014,14 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "duration": 493600,
+  "duration": 1387700,
   "status": "passed"
 });
 formatter.match({
   "location": "WebShop.quitbrowser()"
 });
 formatter.result({
-  "duration": 1035454000,
+  "duration": 1249258300,
   "status": "passed"
 });
 formatter.scenario({
@@ -2089,7 +2102,7 @@ formatter.match({
   "location": "WebShop.launchurl(String)"
 });
 formatter.result({
-  "duration": 10451760900,
+  "duration": 9127798100,
   "status": "passed"
 });
 formatter.match({
@@ -2102,7 +2115,7 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "duration": 744300,
+  "duration": 1559300,
   "status": "passed"
 });
 formatter.match({
@@ -2115,7 +2128,7 @@ formatter.match({
   "location": "WebShop.validateLabelLogin(String)"
 });
 formatter.result({
-  "duration": 171600,
+  "duration": 117100,
   "status": "passed"
 });
 formatter.match({
@@ -2132,7 +2145,7 @@ formatter.match({
   "location": "WebShop.enterUsernameLogin(String,String)"
 });
 formatter.result({
-  "duration": 214400,
+  "duration": 93800,
   "status": "passed"
 });
 formatter.match({
@@ -2149,7 +2162,7 @@ formatter.match({
   "location": "WebShop.enterUsernameLogin(String,String)"
 });
 formatter.result({
-  "duration": 208400,
+  "duration": 98400,
   "status": "passed"
 });
 formatter.match({
@@ -2162,7 +2175,7 @@ formatter.match({
   "location": "WebShop.clickButtonLogin(String)"
 });
 formatter.result({
-  "duration": 204800,
+  "duration": 84200,
   "status": "passed"
 });
 formatter.match({
@@ -2175,7 +2188,7 @@ formatter.match({
   "location": "WebShop.validateErrorLogin(String)"
 });
 formatter.result({
-  "duration": 198300,
+  "duration": 127200,
   "status": "passed"
 });
 formatter.match({
@@ -2188,14 +2201,14 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "duration": 339000,
+  "duration": 220500,
   "status": "passed"
 });
 formatter.match({
   "location": "WebShop.quitbrowser()"
 });
 formatter.result({
-  "duration": 746062300,
+  "duration": 620480900,
   "status": "passed"
 });
 formatter.scenario({
@@ -2276,7 +2289,7 @@ formatter.match({
   "location": "WebShop.launchurl(String)"
 });
 formatter.result({
-  "duration": 9765512300,
+  "duration": 10649717900,
   "status": "passed"
 });
 formatter.match({
@@ -2289,7 +2302,7 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "duration": 168400,
+  "duration": 659800,
   "status": "passed"
 });
 formatter.match({
@@ -2302,7 +2315,7 @@ formatter.match({
   "location": "WebShop.validateLabelLogin(String)"
 });
 formatter.result({
-  "duration": 93500,
+  "duration": 109900,
   "status": "passed"
 });
 formatter.match({
@@ -2319,7 +2332,7 @@ formatter.match({
   "location": "WebShop.enterUsernameLogin(String,String)"
 });
 formatter.result({
-  "duration": 108300,
+  "duration": 104000,
   "status": "passed"
 });
 formatter.match({
@@ -2336,7 +2349,7 @@ formatter.match({
   "location": "WebShop.enterUsernameLogin(String,String)"
 });
 formatter.result({
-  "duration": 244500,
+  "duration": 123400,
   "status": "passed"
 });
 formatter.match({
@@ -2349,7 +2362,7 @@ formatter.match({
   "location": "WebShop.clickButtonLogin(String)"
 });
 formatter.result({
-  "duration": 230700,
+  "duration": 148700,
   "status": "passed"
 });
 formatter.match({
@@ -2362,7 +2375,7 @@ formatter.match({
   "location": "WebShop.validateErrorLogin(String)"
 });
 formatter.result({
-  "duration": 173400,
+  "duration": 1030200,
   "status": "passed"
 });
 formatter.match({
@@ -2375,14 +2388,14 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "duration": 129300,
+  "duration": 2666400,
   "status": "passed"
 });
 formatter.match({
   "location": "WebShop.quitbrowser()"
 });
 formatter.result({
-  "duration": 645982300,
+  "duration": 616063300,
   "status": "passed"
 });
 formatter.scenario({
@@ -2463,7 +2476,7 @@ formatter.match({
   "location": "WebShop.launchurl(String)"
 });
 formatter.result({
-  "duration": 10126445900,
+  "duration": 9446114700,
   "status": "passed"
 });
 formatter.match({
@@ -2476,7 +2489,7 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "duration": 213400,
+  "duration": 1534900,
   "status": "passed"
 });
 formatter.match({
@@ -2489,7 +2502,7 @@ formatter.match({
   "location": "WebShop.validateLabelLogin(String)"
 });
 formatter.result({
-  "duration": 203100,
+  "duration": 287500,
   "status": "passed"
 });
 formatter.match({
@@ -2506,7 +2519,7 @@ formatter.match({
   "location": "WebShop.enterUsernameLogin(String,String)"
 });
 formatter.result({
-  "duration": 133600,
+  "duration": 365700,
   "status": "passed"
 });
 formatter.match({
@@ -2523,7 +2536,7 @@ formatter.match({
   "location": "WebShop.enterUsernameLogin(String,String)"
 });
 formatter.result({
-  "duration": 136800,
+  "duration": 120800,
   "status": "passed"
 });
 formatter.match({
@@ -2536,7 +2549,7 @@ formatter.match({
   "location": "WebShop.clickButtonLogin(String)"
 });
 formatter.result({
-  "duration": 139500,
+  "duration": 106500,
   "status": "passed"
 });
 formatter.match({
@@ -2549,7 +2562,7 @@ formatter.match({
   "location": "WebShop.validateErrorLogin(String)"
 });
 formatter.result({
-  "duration": 85700,
+  "duration": 96600,
   "status": "passed"
 });
 formatter.match({
@@ -2562,14 +2575,14 @@ formatter.match({
   "location": "WebShop.clickLinkTop(String)"
 });
 formatter.result({
-  "duration": 520000,
+  "duration": 167200,
   "status": "passed"
 });
 formatter.match({
   "location": "WebShop.quitbrowser()"
 });
 formatter.result({
-  "duration": 635700000,
+  "duration": 667067900,
   "status": "passed"
 });
 });

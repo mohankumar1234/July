@@ -64,16 +64,16 @@ WebDriver driver;
 		switch (linkname)
 		{
 		case "Register":
-			home1.clicklnkLogin(driver);
-			break;
-		case "Log in":
 			home1.clicklnkRegister(driver);
 			break;
+		case "Log in":
+			home1.clicklnkLogin(driver);
+			break;
 		case "Shopping cart":
-			
+			home1.clicklnkShopping_cart(driver);
 			break;
 		case "Wishlist":
-			
+			home1.clicklnkWishlist(driver);
 			break; 
 		case "Log out":
 			log_in1.clicklnkLog_out(driver);
@@ -223,6 +223,12 @@ WebDriver driver;
 			assertEquals (log_in1.getlblmessage2(driver) , error);
 			break;
 		}
+	}
+	
+	@Then ("^I wait 10 s$")
+	public void wait10s() throws InterruptedException
+	{
+		driver.wait(10);
 	}
 
 	@Then ("^I navigate back the browser$")

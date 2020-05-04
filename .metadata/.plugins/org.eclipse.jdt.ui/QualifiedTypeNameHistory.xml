@@ -3,8 +3,12 @@
 <fullyQualifiedTypeName name="cucumber.api.java.en.Given"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
 <fullyQualifiedTypeName name="POM.HomePage"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By.ByXPath"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="POM.Log_in"/>
+<fullyQualifiedTypeName name="POM.Shopping_cart"/>
+<fullyQualifiedTypeName name="POM.Wishlist"/>
 </qualifiedTypeNameHistroy>

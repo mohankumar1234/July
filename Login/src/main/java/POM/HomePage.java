@@ -47,14 +47,24 @@ public class HomePage
 	}
 	
 	
+	public void clicklnkRegister(WebDriver driver)
+	{
+		lnkRegister.click();
+	}
+	
 	public void clicklnkLogin(WebDriver driver)
 	{
 		lnkLog_in.click();
 	}
 	
-	public void clicklnkRegister(WebDriver driver)
+	public void clicklnkShopping_cart(WebDriver driver)
 	{
-		lnkRegister.click();
+		lnkShopping_cart.click();
+	}
+	
+	public void clicklnkWishlist(WebDriver driver)
+	{
+		lnkWishlist.click();
 	}
 	
 	
